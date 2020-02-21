@@ -9,7 +9,7 @@ import scrapy
 
 
 class TutorialItem(scrapy.Item):
-    # define the fields for your item here like:
-    image_urls = scrapy.Field()
-    images = scrapy.Field()
-    pass
+		# define the fields for your item like:
+		meaning = scrapy.Field()
+		image_urls = scrapy.Field()
+pass

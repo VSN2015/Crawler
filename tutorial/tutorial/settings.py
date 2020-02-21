@@ -33,7 +33,7 @@ ROBOTSTXT_OBEY = False
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -46,15 +46,15 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
+# SPIDER_MIDDLEWARES = {
 #    'tutorial.middlewares.TutorialSpiderMiddleware': 543,
-#}
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
+# DOWNLOADER_MIDDLEWARES = {
 #    'tutorial.middlewares.TutorialDownloaderMiddleware': 543,
-#}
+# }
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -69,7 +69,12 @@ ROBOTSTXT_OBEY = False
 # }
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 # ITEM_PIPELINES = {'tutorial.pipelines.TutorialPipeline': 1}
+# ITEM_PIPELINES = {'scrapy.contrib.pipeline.images.ImagesPipeline': 1}
 IMAGES_STORE = '/home/vansang/Desktop/images'
+
+LOG_FILE="scrapy.log"
+# FILES_STORE = '/home/vansang/Desktop/images'
+# IMAGES_URLS_FIELD = "image_urls"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

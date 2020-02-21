@@ -1,28 +1,32 @@
 import scrapy
+from ..items import TutorialItem
 
 class ScraperSpider(scrapy.Spider):
     name = 'scraper'
-    start_urls = ['https://brickset.com/sets/year-2016']
+    start_urls = ['']
 
     def parse(self, response):
-        SET_SELECTOR = '.set'
+      # item = TutorialItem()
+      # image_urls= []
+      # for img in response.css('a img'):
+      #   image_urls.append(img.css('img::attr(src)').extract_first())
+      #  	item['image_urls'] = image_urls
+      # return item
+
+        SET_SELECTOR = 'a img'
         for brickset in response.css(SET_SELECTOR):
 
-            NAME_SELECTOR = 'h1 ::text'
-            PIECES_SELECTOR = './/dl[dt/text() = "Pieces"]/dd/a/text()'
-            MINIFIGS_SELECTOR = './/dl[dt/text() = "Minifigs"]/dd[2]/a/text()'
-            IMAGE_SELECTOR = 'img ::attr(src)'
+            MEANING_SELECTOR = 'img::attr(alt)'
+            IMAGE_SELECTOR = 'img::attr(src)'
             yield {
-                'name': brickset.css(NAME_SELECTOR).extract_first(),
-                # 'pieces': brickset.xpath(PIECES_SELECTOR).extract_first(),
-                # 'minifigs': brickset.xpath(MINIFIGS_SELECTOR).extract_first(),
-                'image_urls': brickset.css(IMAGE_SELECTOR).extract_first(),
-            }
+                'meaning': [brickset.css(MEANING_SELECTOR).extract_first()],
+                'image_urls': [brickset.css(IMAGE_SELECTOR).extract_first()]
+                }
 
         NEXT_PAGE_SELECTOR = '.next a ::attr(href)'
         next_page = response.css(NEXT_PAGE_SELECTOR).extract_first()
         if next_page:
-            yield scrapy.Request(
+            yield {scrapy.Request(
                 response.urljoin(next_page),
                 callback=self.parse
-            )
+            )}

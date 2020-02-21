@@ -1,0 +1,644 @@
+2020-02-21 19:07:49 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:07:49 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:07:49 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'tutorial.spiders', 'FEED_FORMAT': 'xml', 'COOKIES_ENABLED': False, 'SPIDER_MODULES': ['tutorial.spiders'], 'FEED_URI': 'scraper.xml', 'BOT_NAME': 'tutorial', 'LOG_FILE': 'scrapy.log'}
+2020-02-21 19:07:49 [scrapy.extensions.telnet] INFO: Telnet Password: adfb2b15d3ab9afa
+2020-02-21 19:07:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2020-02-21 19:07:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:07:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:07:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:07:49 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:07:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:07:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:07:49 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.pexels.com/search/forest/> (referer: None)
+2020-02-21 19:07:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.pexels.com/search/forest/>: HTTP status code is not handled or not allowed
+2020-02-21 19:07:50 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:07:50 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 227,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4173,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 0.161199,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 7, 50, 96697),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57524224,
+ 'memusage/startup': 57524224,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 7, 49, 935498)}
+2020-02-21 19:07:50 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:08:55 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:08:55 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:08:55 [scrapy.crawler] INFO: Overridden settings: {'FEED_FORMAT': 'xml', 'COOKIES_ENABLED': False, 'BOT_NAME': 'tutorial', 'SPIDER_MODULES': ['tutorial.spiders'], 'LOG_FILE': 'scrapy.log', 'FEED_URI': 'scraper.xml', 'NEWSPIDER_MODULE': 'tutorial.spiders'}
+2020-02-21 19:08:55 [scrapy.extensions.telnet] INFO: Telnet Password: b9f5f2edb2e7567a
+2020-02-21 19:08:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.feedexport.FeedExporter']
+2020-02-21 19:08:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:08:55 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:08:55 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:08:55 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:08:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:08:55 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:08:55 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.pexels.com/search/forest> (referer: None)
+2020-02-21 19:08:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.pexels.com/search/forest>: HTTP status code is not handled or not allowed
+2020-02-21 19:08:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:08:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 226,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4146,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 0.386271,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 8, 56, 93252),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57217024,
+ 'memusage/startup': 57217024,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 8, 55, 706981)}
+2020-02-21 19:08:56 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:09:18 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:09:18 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:09:18 [scrapy.crawler] INFO: Overridden settings: {'FEED_URI': 'scraper.xml', 'FEED_FORMAT': 'xml', 'NEWSPIDER_MODULE': 'tutorial.spiders', 'SPIDER_MODULES': ['tutorial.spiders'], 'LOG_FILE': 'scrapy.log', 'BOT_NAME': 'tutorial', 'COOKIES_ENABLED': False}
+2020-02-21 19:09:18 [scrapy.extensions.telnet] INFO: Telnet Password: 175c9a031806df3d
+2020-02-21 19:09:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2020-02-21 19:09:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:09:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:09:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:09:18 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:09:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:09:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:09:18 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.pexels.com/search/forest> (referer: None)
+2020-02-21 19:09:18 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.pexels.com/search/forest>: HTTP status code is not handled or not allowed
+2020-02-21 19:09:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:09:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 226,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4175,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 0.425731,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 9, 18, 889671),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57397248,
+ 'memusage/startup': 57397248,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 9, 18, 463940)}
+2020-02-21 19:09:18 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:10:35 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:10:35 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:10:35 [scrapy.crawler] INFO: Overridden settings: {'FEED_FORMAT': 'xml', 'BOT_NAME': 'tutorial', 'FEED_URI': 'scraper.xml', 'NEWSPIDER_MODULE': 'tutorial.spiders', 'LOG_FILE': 'scrapy.log', 'SPIDER_MODULES': ['tutorial.spiders'], 'COOKIES_ENABLED': False}
+2020-02-21 19:10:35 [scrapy.extensions.telnet] INFO: Telnet Password: ed54af0a7c42efc9
+2020-02-21 19:10:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2020-02-21 19:10:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:10:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:10:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:10:35 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:10:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:10:35 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:10:35 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.pexels.com/search/forest> (referer: None)
+2020-02-21 19:10:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.pexels.com/search/forest>: HTTP status code is not handled or not allowed
+2020-02-21 19:10:35 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:10:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 226,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4159,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 0.384857,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 10, 35, 575198),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57245696,
+ 'memusage/startup': 57245696,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 10, 35, 190341)}
+2020-02-21 19:10:35 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:11:09 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:11:09 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:11:09 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'tutorial', 'NEWSPIDER_MODULE': 'tutorial.spiders', 'FEED_FORMAT': 'xml', 'SPIDER_MODULES': ['tutorial.spiders'], 'FEED_URI': 'scraper.xml', 'COOKIES_ENABLED': False, 'LOG_FILE': 'scrapy.log'}
+2020-02-21 19:11:09 [scrapy.extensions.telnet] INFO: Telnet Password: cc286e24fdfdd834
+2020-02-21 19:11:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2020-02-21 19:11:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:11:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:11:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:11:09 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:11:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:11:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://9mobi.vn/anh-dep-2015n.aspx> (referer: None)
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/winphone-icon/khung-hinh-dep-for-windows-phone.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/winphone-icon/khung-hinh-dep-for-windows-phone.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/Android-icon/meo-chup-anh-dep-for-android.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/Android-icon/meo-chup-anh-dep-for-android.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/Android-icon/khung-hinh-tinh-yeu-hd-for-android.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/Android-icon/khung-hinh-tinh-yeu-hd-for-android.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/ios-icon/camera-bag-2-hd-for-ios.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/ios-icon/camera-bag-2-hd-for-ios.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/Android-icon/chup-hinh-han-quoc-hd-for-android.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/Android-icon/chup-hinh-han-quoc-hd-for-android.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/ios-icon/highlighter-hd-for-ios.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/ios-icon/highlighter-hd-for-ios.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/ios-icon/real-bokeh-for-ios.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/ios-icon/real-bokeh-for-ios.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://imobi1.taimienphi.vn/cf/winphone-icon/anh-han-quoc-for-windows-phone.jpg> (referer: None)
+2020-02-21 19:11:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://imobi1.taimienphi.vn/cf/winphone-icon/anh-han-quoc-for-windows-phone.jpg> referred in <None>
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/winphone-icon/khung-hinh-dep-for-windows-phone.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/winphone-icon/khung-hinh-dep-for-windows-phone.jpg', 'checksum': '266d97da5fae8c730d6a123efd20ee9c', 'path': 'full/6034019082a3dd40dffae609bb815d405f567c5d.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/Android-icon/meo-chup-anh-dep-for-android.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/Android-icon/meo-chup-anh-dep-for-android.jpg', 'checksum': '252baa975949d6fcbd5345bc3af40a0c', 'path': 'full/512f5128bdce78cfeec149504884394633f2ee49.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/Android-icon/khung-hinh-tinh-yeu-hd-for-android.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/Android-icon/khung-hinh-tinh-yeu-hd-for-android.jpg', 'checksum': '8f61a5718bd309f700db4ea569ebe847', 'path': 'full/517a0947ac9484b870f641c3dcace934ad0b244f.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/ios-icon/camera-bag-2-hd-for-ios.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/ios-icon/camera-bag-2-hd-for-ios.jpg', 'checksum': 'd2a55c0e0b23e6bf094715770a38c804', 'path': 'full/b2913754867bc96c934869c894885b25ce200c13.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/Android-icon/chup-hinh-han-quoc-hd-for-android.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/Android-icon/chup-hinh-han-quoc-hd-for-android.jpg', 'checksum': '9fb4230204c558d954dcda6d202cf2b3', 'path': 'full/4f66d04cbc84946baff81c04416f9e03eec7d1af.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/ios-icon/highlighter-hd-for-ios.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/ios-icon/highlighter-hd-for-ios.jpg', 'checksum': 'f529af640445abd8802affdfffc33f8f', 'path': 'full/4a2f38e69141a3103970020943a9e65cd90ec920.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/ios-icon/real-bokeh-for-ios.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/ios-icon/real-bokeh-for-ios.jpg', 'checksum': 'd0b671208b6938cfbd737362ad904b53', 'path': 'full/e7a38a7467ed2c50597a2008a88f8aac52a067dc.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://9mobi.vn/anh-dep-2015n.aspx>
+{'meaning': [None], 'image_urls': ['https://imobi1.taimienphi.vn/cf/winphone-icon/anh-han-quoc-for-windows-phone.jpg'], 'images': [{'url': 'https://imobi1.taimienphi.vn/cf/winphone-icon/anh-han-quoc-for-windows-phone.jpg', 'checksum': '2f23da0783b5d9c09293c646833a73f5', 'path': 'full/d270534aac513a59ce5434df0ebb6c5e903b36e7.jpg'}]}
+2020-02-21 19:11:10 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:11:10 [scrapy.extensions.feedexport] INFO: Stored xml feed (8 items) in: scraper.xml
+2020-02-21 19:11:10 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2347,
+ 'downloader/request_count': 9,
+ 'downloader/request_method_count/GET': 9,
+ 'downloader/response_bytes': 83565,
+ 'downloader/response_count': 9,
+ 'downloader/response_status_count/200': 9,
+ 'elapsed_time_seconds': 0.761745,
+ 'file_count': 8,
+ 'file_status_count/downloaded': 8,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 11, 10, 634491),
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 25,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57487360,
+ 'memusage/startup': 57487360,
+ 'response_received_count': 9,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 11, 9, 872746)}
+2020-02-21 19:11:10 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:12:54 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:12:54 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:12:54 [scrapy.crawler] INFO: Overridden settings: {'LOG_FILE': 'scrapy.log', 'BOT_NAME': 'tutorial', 'FEED_URI': 'scraper.xml', 'FEED_FORMAT': 'xml', 'NEWSPIDER_MODULE': 'tutorial.spiders', 'SPIDER_MODULES': ['tutorial.spiders'], 'COOKIES_ENABLED': False}
+2020-02-21 19:12:54 [scrapy.extensions.telnet] INFO: Telnet Password: 8b1cee8de6f2c7b2
+2020-02-21 19:12:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter']
+2020-02-21 19:12:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:12:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:12:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:12:54 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:12:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:12:54 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:12:54 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.pexels.com/> (referer: None)
+2020-02-21 19:12:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.pexels.com/>: HTTP status code is not handled or not allowed
+2020-02-21 19:12:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:12:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 213,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4125,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 0.175454,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 12, 54, 965513),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57319424,
+ 'memusage/startup': 57319424,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 12, 54, 790059)}
+2020-02-21 19:12:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:13:37 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:13:37 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:13:37 [scrapy.crawler] INFO: Overridden settings: {'SPIDER_MODULES': ['tutorial.spiders'], 'FEED_URI': 'scraper.xml', 'NEWSPIDER_MODULE': 'tutorial.spiders', 'FEED_FORMAT': 'xml', 'BOT_NAME': 'tutorial', 'LOG_FILE': 'scrapy.log', 'COOKIES_ENABLED': False}
+2020-02-21 19:13:37 [scrapy.extensions.telnet] INFO: Telnet Password: 7814605d6d560fc6
+2020-02-21 19:13:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2020-02-21 19:13:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:13:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:13:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:13:37 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:13:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:13:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:13:37 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.pexels.com/photo/man-wearing-red-leather-jacket-3307276/> (referer: None)
+2020-02-21 19:13:37 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.pexels.com/photo/man-wearing-red-leather-jacket-3307276/>: HTTP status code is not handled or not allowed
+2020-02-21 19:13:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:13:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 258,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4215,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 0.404896,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 13, 37, 887600),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/403': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57491456,
+ 'memusage/startup': 57491456,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 13, 37, 482704)}
+2020-02-21 19:13:37 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:15:20 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:15:20 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:15:20 [scrapy.crawler] INFO: Overridden settings: {'LOG_FILE': 'scrapy.log', 'COOKIES_ENABLED': False, 'FEED_FORMAT': 'xml', 'SPIDER_MODULES': ['tutorial.spiders'], 'BOT_NAME': 'tutorial', 'FEED_URI': 'scraper.xml', 'NEWSPIDER_MODULE': 'tutorial.spiders'}
+2020-02-21 19:15:20 [scrapy.extensions.telnet] INFO: Telnet Password: 27b6adec322e1e7e
+2020-02-21 19:15:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats']
+2020-02-21 19:15:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:15:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:15:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:15:20 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:15:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:15:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://unsplash.com/s/photos/flicker> (referer: None)
+2020-02-21 19:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://images.unsplash.com/profile-1508285973830-eaf36e447c1d?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff> (referer: None)
+2020-02-21 19:15:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://images.unsplash.com/profile-1508285973830-eaf36e447c1d?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff> referred in <None>
+2020-02-21 19:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://images.unsplash.com/profile-fb-1477473037-13c653015311.jpg?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff> (referer: None)
+2020-02-21 19:15:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://images.unsplash.com/profile-fb-1477473037-13c653015311.jpg?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff> referred in <None>
+2020-02-21 19:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://images.unsplash.com/profile-1499524561521-3f6db11b2eb3?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff> (referer: None)
+2020-02-21 19:15:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://images.unsplash.com/profile-1499524561521-3f6db11b2eb3?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff> referred in <None>
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/profile-1508285973830-eaf36e447c1d?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff'], 'images': [{'path': 'full/9e70f1929a94c441c0fad91e2fd7643b0c5bc5a5.jpg', 'url': 'https://images.unsplash.com/profile-1508285973830-eaf36e447c1d?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff', 'checksum': '561d95331c2da3daf3e6b9222597b92f'}], 'meaning': ["Go to Joshua Reddekopp's profile"]}
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/profile-fb-1477473037-13c653015311.jpg?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff'], 'images': [{'path': 'full/1fad25bd70c9a774574198e82cd2663e8f2e8ad5.jpg', 'url': 'https://images.unsplash.com/profile-fb-1477473037-13c653015311.jpg?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff', 'checksum': 'ea50eeeb36bf9878c3fb346b57aa0c8b'}], 'meaning': ["Go to Hans Vivek's profile"]}
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/profile-1499524561521-3f6db11b2eb3?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff'], 'images': [{'path': 'full/06354869fe5db8aee6e8c65cb6ef20e214c8c623.jpg', 'url': 'https://images.unsplash.com/profile-1499524561521-3f6db11b2eb3?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff', 'checksum': '2dff5964f5238867f2eef950f2b66f28'}], 'meaning': ["Go to Patti Black's profile"]}
+2020-02-21 19:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80> (referer: None)
+2020-02-21 19:15:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80> referred in <None>
+2020-02-21 19:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80> (referer: None)
+2020-02-21 19:15:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80> referred in <None>
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/8127c65f59db9c1a40b47bd5fc60b7b692026ccf.jpg', 'url': 'https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '259083a799a2e8cb7d9b39e472cc479b'}], 'meaning': ['rule of thirds photography of lit candle']}
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/8127c65f59db9c1a40b47bd5fc60b7b692026ccf.jpg', 'url': 'https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '259083a799a2e8cb7d9b39e472cc479b'}], 'meaning': ['rule of thirds photography of lit candle']}
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/8127c65f59db9c1a40b47bd5fc60b7b692026ccf.jpg', 'url': 'https://images.unsplash.com/photo-1489659639091-8b687bc4386e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '259083a799a2e8cb7d9b39e472cc479b'}], 'meaning': ['rule of thirds photography of lit candle']}
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/e6578d483548c9d2523046dc9b8d6f6080bba21f.jpg', 'url': 'https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '61d3bd1b899ccfe2a007d2d43d68ecfa'}], 'meaning': ['selective focus photo of votive candle']}
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/e6578d483548c9d2523046dc9b8d6f6080bba21f.jpg', 'url': 'https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '61d3bd1b899ccfe2a007d2d43d68ecfa'}], 'meaning': ['selective focus photo of votive candle']}
+2020-02-21 19:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/e6578d483548c9d2523046dc9b8d6f6080bba21f.jpg', 'url': 'https://images.unsplash.com/photo-1484950086500-7778c02c72b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '61d3bd1b899ccfe2a007d2d43d68ecfa'}], 'meaning': ['selective focus photo of votive candle']}
+2020-02-21 19:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80> (referer: None)
+2020-02-21 19:15:22 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80> referred in <None>
+2020-02-21 19:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/b4d1dbe80319e43f178f9de12b61bc1d486f9695.jpg', 'url': 'https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '95334cb01902e86491ac7f3e5f56fedf'}], 'meaning': ['brown and red bird beside green grass']}
+2020-02-21 19:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/b4d1dbe80319e43f178f9de12b61bc1d486f9695.jpg', 'url': 'https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '95334cb01902e86491ac7f3e5f56fedf'}], 'meaning': ['brown and red bird beside green grass']}
+2020-02-21 19:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://unsplash.com/s/photos/flicker>
+{'image_urls': ['https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'], 'images': [{'path': 'full/b4d1dbe80319e43f178f9de12b61bc1d486f9695.jpg', 'url': 'https://images.unsplash.com/photo-1555210724-5462c2e605f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', 'checksum': '95334cb01902e86491ac7f3e5f56fedf'}], 'meaning': ['brown and red bird beside green grass']}
+2020-02-21 19:15:22 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:15:22 [scrapy.extensions.feedexport] INFO: Stored xml feed (12 items) in: scraper.xml
+2020-02-21 19:15:22 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2073,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 342616,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 7,
+ 'elapsed_time_seconds': 2.108927,
+ 'file_count': 6,
+ 'file_status_count/downloaded': 6,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 15, 22, 321610),
+ 'item_scraped_count': 12,
+ 'log_count/DEBUG': 25,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57446400,
+ 'memusage/startup': 57446400,
+ 'response_received_count': 7,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 15, 20, 212683)}
+2020-02-21 19:15:22 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:16:15 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:16:15 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:16:15 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'tutorial.spiders', 'FEED_FORMAT': 'xml', 'FEED_URI': 'scraper.xml', 'BOT_NAME': 'tutorial', 'LOG_FILE': 'scrapy.log', 'SPIDER_MODULES': ['tutorial.spiders'], 'COOKIES_ENABLED': False}
+2020-02-21 19:16:15 [scrapy.extensions.telnet] INFO: Telnet Password: db6019eb23966a31
+2020-02-21 19:16:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2020-02-21 19:16:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:16:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:16:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:16:15 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:16:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:16:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:16:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.flickr.com/photos/tags/flicker/> (referer: None)
+2020-02-21 19:16:17 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:16:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 233,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 98384,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.10012,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 16, 17, 994070),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 57221120,
+ 'memusage/startup': 57221120,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 16, 15, 893950)}
+2020-02-21 19:16:17 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-02-21 19:17:54 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: tutorial)
+2020-02-21 19:17:54 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.5.2 (default, Oct  8 2019, 13:06:37) - [GCC 5.4.0 20160609], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Linux-4.15.0-76-generic-x86_64-with-Ubuntu-16.04-xenial
+2020-02-21 19:17:54 [scrapy.crawler] INFO: Overridden settings: {'SPIDER_MODULES': ['tutorial.spiders'], 'COOKIES_ENABLED': False, 'FEED_FORMAT': 'xml', 'BOT_NAME': 'tutorial', 'NEWSPIDER_MODULE': 'tutorial.spiders', 'FEED_URI': 'scraper.xml', 'LOG_FILE': 'scrapy.log'}
+2020-02-21 19:17:54 [scrapy.extensions.telnet] INFO: Telnet Password: 7d12103746a059ea
+2020-02-21 19:17:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.corestats.CoreStats']
+2020-02-21 19:17:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-21 19:17:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-21 19:17:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2020-02-21 19:17:54 [scrapy.core.engine] INFO: Spider opened
+2020-02-21 19:17:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-21 19:17:54 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-02-21 19:17:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.flickr.com/photos/150704795@N06/39449157341/in/photolist-2ivDKyJ-4kgYBR-5KYyst-xrxzx-4Ji1re-6uYnYT-MLwsv-24ED6R1-7ZgoCn-39wJwG-8Q7RAf-eCpWn-4tHp8E-4XHKpZ-9ANSrc-251ZPoR-L8XjLr-4k5R4W-F9fSqy-4LCLKP-6H8fsD-2inSa5d-4JjCsL-236Zf6c-92g1TR-2ebq1Pb-2hLiQGh-4WvPMr-5kVQtk-8jnKX9-8jjwpX-8jnX4b-8jjHhH-8jnZVs-8jjxs6-8jjH24-8jnQLC-2ijxRpn-8jnN5U-H4S7uY-Yrdeth-8jjJa8-2hpLQvq-aAuha-2isEJ5T-2hGfSLc-JBpyvu-2hYCbYe-CsreaA-2imnsNP/> (referer: None)
+2020-02-21 19:17:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-02-21 19:17:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 618,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 75535,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.674606,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 21, 12, 17, 56, 326481),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 57503744,
+ 'memusage/startup': 57503744,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 21, 12, 17, 54, 651875)}
+2020-02-21 19:17:56 [scrapy.core.engine] INFO: Spider closed (finished)
